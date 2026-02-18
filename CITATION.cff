@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it using the metadata from this file."
+title: "hi-sensitivity-diagnostics: RMS-based HI sensitivity and integration planning toolkit"
+abstract: >-
+  A spectral RMS-based diagnostic and integration planning tool for
+  21 cm HI observations. The software evaluates thermal versus
+  systematic noise regimes using radiometer-equation scaling,
+  stacking efficiency (1/sqrt(N)) audits, and quadratic floor
+  estimation to support small-dish and SDR-based observing campaigns.
+type: software
+authors:
+  - family-names: Baroni
+    given-names: Tiago Henrique França
+    email: t.baroni@gmail.com
+    orcid: "https://orcid.org/0000-0002-3195-8663"
+repository-code: "https://github.com/tiagobaroni/hi-sensitivity-diagnostics"
+url: "https://github.com/tiagobaroni/hi-sensitivity-diagnostics"
+keywords:
+  - radio astronomy
+  - HI line
+  - sensitivity analysis
+  - radiometer equation
+  - RMS diagnostics
+  - small-dish radio telescopes
+  - SDR
+license: GPL-3.0
+version: 0.1.0
+date-released: "2026-02-18"
+references:
+  - type: software
+    title: "SalsaSpectrum (Python implementation)"
+    authors:
+      - family-names: Baroni
+        given-names: Tiago Henrique França
+    url: "https://github.com/tiagobaroni/SalsaSpectrum"
+    year: 2026
+    notes: "Spectral analysis library used for baseline removal and noise estimation."
