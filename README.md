@@ -3,6 +3,7 @@
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![Status](https://img.shields.io/badge/status-beta-orange.svg)]()
+[![Ko-Fi](https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-ff5f5f?style=flat&logo=ko-fi)](https://ko-fi.com/tiagobaroni)
 
 **A physically-motivated diagnostic tool for integration-time planning and sensitivity validation in 21cm HI radio observations.**
 
@@ -52,7 +53,7 @@ The system explicitly distinguishes between:
 - `spectral_linefree_rms` → Used for integration decisions  
 - `total_power_metric` → Diagnostic only  
 
-```python
+```text
 # WARNING:
 # total_power is diagnostic only.
 # Integration-time decisions must rely on spectral_linefree_rms.
