@@ -1,0 +1,64 @@
+# pyproject.toml
+# Changelog:
+# - Added [build-system] for PEP 517 compliance.
+# - Relaxed dependency pins from "==" to ">=" to prevent conflicts.
+# - Updated requires-python to ">=3.10".
+# - Added professional English description, keywords, and PyPI classifiers (GPLv3).
+# - Added project URLs and pytest configuration.
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hi-sensitivity-diagnostics"
+version = "0.1.0"
+description = "A diagnostic-grade tool for sensitivity planning and stability assessment in 21cm HI observations, separating thermal noise from systematic instrumental effects using spectral line-free RMS."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GNU General Public License v3.0 (GPL-3.0)" }
+authors = [
+    { name = "Tiago Henrique França Baroni", email = "t.baroni@gmail.com" },
+]
+keywords = [
+    "radio astronomy",
+    "HI line",
+    "21cm",
+    "radiometer equation",
+    "sensitivity",
+    "instrumental floor",
+    "drift detection",
+    "allan deviation",
+    "spectral analysis"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "astropy>=7.2.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "scipy>=1.17.0",
+    "requests>=2.32.5",
+    "fpdf2>=2.8.5",
+    "PyYAML>=6.0.3",
+    "SalsaSpectrum @ git+https://github.com/tiagobaroni/SalsaSpectrum.git@67a86b367f73b5db722ff8473a39cdb38ea5103a",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tiagobaroni/hi-sensitivity-diagnostics"
+"Repository" = "https://github.com/tiagobaroni/hi-sensitivity-diagnostics"
+"Bug Tracker" = "https://github.com/tiagobaroni/hi-sensitivity-diagnostics/issues"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
